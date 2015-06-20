@@ -4,7 +4,7 @@ coursera Getting and Cleaning Data final Project
 This repo contains the script "run_analysis.R" which merges the 
 training and test sets from:
 
-  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+  <B>https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip</B>
   
 It then keeps only those observations related to mean and standard variation.
 Adds the Activity description by joining it with the  "activity_labels.txt" 
