@@ -1,6 +1,10 @@
 # Final Project Submission
 # for coursera "Getting and Cleaning Data" course
 
+library(dplyr)
+library(tidyr)
+library(plyr)
+
 strDBPath = "./UCI HAR Dataset/"
 strTestSetPath = "./UCI HAR Dataset/test/"
 strTrainSetPath = "./UCI HAR Dataset/train/"
