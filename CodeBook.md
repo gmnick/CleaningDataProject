@@ -46,12 +46,17 @@ The script uses sthe following libraries:
 |        *vecExclude*|A list of names to exclude/ignore |
 |         *strPrefix*|Text to add to the beginning of the name |
 
-The test set is merged with the test activity labels and the test subject IDs.
-The training set is merged with the training activity labels and the training subject IDs.
+#### The script manipulates the data in the following way:
 
-
-
-
+* The test set is merged with the test activity labels and the test subject IDs.
+* The training set is merged with the training activity labels and the training subject IDs.
+* Both the resulting test and training sets are merged together.
+* The column names are attached to the new data frame.
+* Only the columns related to the mean and standard devistion are kept. These are the features that contain the strings "<B>-mean()</B>" or "<B>-std()</B>" in the column name.
+* The columns are reordered in order to put the columns "Label", "Activity", "Subject" at the front.
+* An independent tidy data set with the average of each variable for each activity and each subject is generated.
+* The mean and std columns in the tidy dataset are renamed to have them prefixed with the string "<B>mean.</B>" .
+* The tidy data frame is saved to a file "<B>FinalTidyData.txt</B>" in the current working directory.
 
 -- Nick Nobile
 2015-06-19
